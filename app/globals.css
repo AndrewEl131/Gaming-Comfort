@@ -1,5 +1,23 @@
 @import "tailwindcss";
 
-body{
-    background-color: black;
+body {
+  background-color: black;
+  color: #fff;
+}
+
+.starter-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.starter-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("/assets/gaming-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: blur(10px);
+  transform: scale(1.1); /* prevents blur edges */
+  z-index: -1;
 }
