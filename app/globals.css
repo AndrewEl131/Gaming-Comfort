@@ -18,6 +18,8 @@ body {
   background-size: cover;
   background-position: center;
   filter: blur(10px);
-  transform: scale(1.1); /* prevents blur edges */
+  transform: scale(1.1);
   z-index: -1;
 }
+
+
