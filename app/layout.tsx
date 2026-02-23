@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Anton, Radio_Canada_Big } from "next/font/google";
+import { Anton, Radio_Canada_Big, Playfair_Display } from "next/font/google";
 import Navigation from "@/Components/Navigation";
 
 const anton = Anton({
@@ -15,6 +15,12 @@ const radioCanadaBig = Radio_Canada_Big({
   variable: "--font-radio-canada-big",
 });
 
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-playfair",
+});
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -23,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={``}
+        className={`${anton.variable} ${radioCanadaBig.variable} ${playfair.variable} antialiased`}
       >
         <Navigation />
         {children}

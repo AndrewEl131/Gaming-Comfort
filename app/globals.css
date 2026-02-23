@@ -22,4 +22,16 @@ body {
   z-index: -1;
 }
 
+/* fonts */
+
+.primary-font{
+  font-family: "Radio Canada Big", sans-serif;
+}
+.solid-font{
+  font-family: "Anton", sans-serif;
+}
+.secondary-font{
+  font-family: "Playfair Display", serif;
+}
+
 

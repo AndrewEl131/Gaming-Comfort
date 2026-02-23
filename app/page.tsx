@@ -1,5 +1,5 @@
+import CategoryItem from "@/Components/CategoryItem";
 import Image from "next/image";
-import RainbowText from "./RainbowText";
 
 export default function Home() {
   return (
@@ -13,9 +13,7 @@ export default function Home() {
           </div>
 
           <div className="w-100 h-10">
-            <label
-              className="block mb-2.5 text-sm font-medium text-heading sr-only "
-            >
+            <label className="block mb-2.5 text-sm font-medium text-heading sr-only ">
               Search
             </label>
             <div className="relative">
@@ -53,6 +51,10 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </div>
+      {/* Category Section */}
+      <div className="w-full h-100 flex justify-evenly items-center">
+        <CategoryItem img="/icons/controller-icon.png" title="Controller" desc="Controller its main thing for PlayStation design and comfort in game time" />
       </div>
     </main>
   );

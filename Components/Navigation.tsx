@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Navigation() {
   return (
-    <header className="w-full h-12.5 fixed top-0 bg-transparent flex items-center justify-between px-5">
+    <header className="w-full h-12.5 fixed top-0 bg-transparent flex items-center justify-between px-5 z-50">
       <div className="h-full flex-1">
         <div className="w-25 h-full relative">
           <Image src={"/assets/gaming-icon.png"} fill alt="icon" />
