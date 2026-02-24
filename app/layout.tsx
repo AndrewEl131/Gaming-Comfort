@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Anton, Radio_Canada_Big, Playfair_Display } from "next/font/google";
+import { Anton, Radio_Canada_Big, Playfair_Display, Cascadia_Mono } from "next/font/google";
 import Navigation from "@/Components/Navigation";
 
 const anton = Anton({
@@ -13,6 +13,12 @@ const radioCanadaBig = Radio_Canada_Big({
   subsets: ["latin"],
   weight: ["400", "500", "700"],
   variable: "--font-radio-canada-big",
+});
+
+const cascadiaMono = Cascadia_Mono({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
+  variable: "--font-cascadia-mono",
 });
 
 const playfair = Playfair_Display({
@@ -29,7 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${anton.variable} ${radioCanadaBig.variable} ${playfair.variable} antialiased`}
+        className={`${anton.variable} ${radioCanadaBig.variable} ${playfair.variable} ${cascadiaMono.variable} antialiased`}
       >
         <Navigation />
         {children}

@@ -30,7 +30,7 @@ export default function Home() {
                   <path
                     stroke="currentColor"
                     stroke-linecap="round"
-                    stroke-width="2"
+                    strokeWidth="2"
                     d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"
                   />
                 </svg>
@@ -54,7 +54,7 @@ export default function Home() {
       </div>
       {/* Category Section */}
       <div className="w-full h-130 py-10 flex flex-col gap-11.5">
-        <h1 className="text-center text-5xl primary-font">Check main things for your future setup</h1>
+        <h1 className="text-center text-5xl solid-font">Check main things for your future setup</h1>
         <div className="w-full flex justify-evenly">
           <CategoryItem
             img="/icons/controller-icon.png"
