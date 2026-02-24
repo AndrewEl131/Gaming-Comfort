@@ -53,8 +53,30 @@ export default function Home() {
         </div>
       </div>
       {/* Category Section */}
-      <div className="w-full h-100 flex justify-evenly items-center">
-        <CategoryItem img="/icons/controller-icon.png" title="Controller" desc="Controller its main thing for PlayStation design and comfort in game time" />
+      <div className="w-full h-130 py-10 flex flex-col gap-11.5">
+        <h1 className="text-center text-5xl primary-font">Check main things for your future setup</h1>
+        <div className="w-full flex justify-evenly">
+          <CategoryItem
+            img="/icons/controller-icon.png"
+            title="Controller"
+            desc="Controller its main thing for Design and comfort in game time"
+          />
+          <CategoryItem
+            img="/icons/keyboard.png"
+            title="Keyboard"
+            desc="Keyboard is first seen when taking photos of setup"
+          />
+          <CategoryItem
+            img="/icons/gaming-chair.png"
+            title="Gaming Chair"
+            desc="Gaming chair is main thing for your comfort and design in your setup"
+          />
+          <CategoryItem
+            img="/icons/mouse.png"
+            title="Mouse"
+            desc="Mouse has lot of variants, because its for your hand comfort"
+          />
+        </div>
       </div>
     </main>
   );
