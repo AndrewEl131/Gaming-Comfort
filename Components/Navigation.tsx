@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Navigation() {
   return (
@@ -10,9 +11,15 @@ export default function Navigation() {
         </div>
       </div>
       <ul className="h-full flex justify-center items-center gap-8 text-[16.5px] flex-1">
-        <li>Home</li>
+        <Link href={"/"}>
+          <li>Home</li>
+        </Link>
+        <Link href={"/gallery"}>
         <li>Gallery</li>
+        </Link>
+        <Link href={"categories"}>
         <li>Categories</li>
+        </Link>
         <li>FAQ</li>
       </ul>
 
