@@ -73,7 +73,7 @@ export default function page() {
       <div className="w-full py-16 flex justify-center">
         <div className="grid grid-cols-4 gap-2">
           {categories.map((category, index) => (
-            <div className="w-80 h-65 space-y-4" key={index}>
+            <div className="w-80 h-65 space-y-4 duration-300 hover:scale-110 cursor-pointer" key={index}>
               <div className="w-40 h-25 mx-auto relative" >
                 <Image src={category.img} fill alt="icon" />
               </div>

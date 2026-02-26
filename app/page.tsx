@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main>
+    <main className="relative">
       {/* Starter section */}
       <div className="w-full h-screen flex justify-center items-center starter-section">
         <div className="w-275 h-125 py-5 px-5 flex flex-col items-center gap-16">

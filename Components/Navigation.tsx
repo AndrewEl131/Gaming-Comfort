@@ -5,6 +5,13 @@ import Link from "next/link";
 export default function Navigation() {
   return (
     <header className="w-full h-12.5 fixed top-0 bg-transparent flex items-center justify-between px-5 z-50">
+      {/* Accordion Card */}
+      <div className="w-120 h-120 absolute right-0 bottom-[-92vh] bg-mauve-900 px-5 py-5 rounded-md">
+        <div className="w-full h-10 bg-olive-900 rounded-b px-3 flex items-center">
+          <h1>How can I find my comfort</h1>
+          <Image src={"/icons/chevron-down.png"} width={20} height={20} alt="icon" className="ml-auto" />
+        </div>
+      </div>
       <div className="h-full flex-1">
         <div className="w-25 h-full relative">
           <Image src={"/assets/gaming-icon.png"} fill alt="icon" />
