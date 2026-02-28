@@ -1,17 +1,20 @@
+"use client"
+
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import AccordionCard from "./AccordionCard";
+import { useState } from "react";
 
 export default function Navigation() {
+
+  const [isCardShowing, setIsCardShow] = useState(false);
+
   return (
     <header className="w-full h-12.5 fixed top-0 bg-transparent flex items-center justify-between px-5 z-50">
       {/* Accordion Card */}
-      <div className="w-120 h-120 absolute right-0 bottom-[-92vh] bg-mauve-900 px-5 py-5 rounded-md">
-        <div className="w-full h-10 bg-olive-900 rounded-b px-3 flex items-center">
-          <h1>How can I find my comfort</h1>
-          <Image src={"/icons/chevron-down.png"} width={20} height={20} alt="icon" className="ml-auto" />
-        </div>
-      </div>
+      {isCardShowing && <AccordionCard showFunc={() => setIsCardShow(false)} />}
+
       <div className="h-full flex-1">
         <div className="w-25 h-full relative">
           <Image src={"/assets/gaming-icon.png"} fill alt="icon" />
@@ -22,12 +25,12 @@ export default function Navigation() {
           <li>Home</li>
         </Link>
         <Link href={"/gallery"}>
-        <li>Gallery</li>
+          <li>Gallery</li>
         </Link>
         <Link href={"categories"}>
-        <li>Categories</li>
+          <li>Categories</li>
         </Link>
-        <li>FAQ</li>
+        <li onClick={() => setIsCardShow(true)} className="cursor-pointer">FAQ</li>
       </ul>
 
       <div className="h-full flex justify-end items-center flex-1 gap-5">
