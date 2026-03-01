@@ -1,0 +1,13 @@
+
+.faq-card{
+    animation: card-appear linear 500ms;
+}
+
+@keyframes card-appear{
+    from {
+        bottom: -96vh;
+    }
+    to {
+        bottom: -92vh;
+    }
+}

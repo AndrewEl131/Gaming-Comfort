@@ -78,6 +78,21 @@ export default function Home() {
           />
         </div>
       </div>
+      {/* Client Setup */}
+      <div className="w-full h-220 flex">
+        <div className="w-[50vw] flex justify-center items-center">
+          <div className="w-140 h-155 border">
+            <div className="space-y-5">
+              <h1 className="secondary-font text-[21px]">Our client's setup</h1>
+
+            <h1 className="text-5xl">We Always Help.</h1>
+            </div>
+          </div>
+        </div>
+        <div className="w-[50vw] relative">
+          <Image src={"/assets/client-setup.jpg"} fill alt="setup" />
+        </div>
+      </div>
     </main>
   );
 }

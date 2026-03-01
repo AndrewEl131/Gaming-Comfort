@@ -3,6 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { useState } from "react";
+import './components-styles.css'
 
 type CardProps = {
     showFunc: () => void;
@@ -13,7 +14,7 @@ export default function AccordionCard({ showFunc }: CardProps) {
   const [active, setActive] = useState<Number | null>(null);
 
   return (
-    <div className="w-130 h-auto bg-purple-500 absolute right-0 bottom-[-92vh] py-6 flex justify-center items-center rounded-2xl">
+    <div className="w-130 h-auto bg-purple-500 absolute right-5 bottom-[-92vh] py-6 flex justify-center items-center rounded-2xl faq-card">
       <div className="w-120 h-auto bg-mauve-900 px-5 py-10 rounded-md space-y-8 relative">
         <div className="absolute left-2 top-2 cursor-pointer" onClick={(showFunc)}>
           <svg
