@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="relative">
+    <main>
       {/* Starter section */}
       <div className="w-full h-screen flex justify-center items-center starter-section">
         <div className="w-275 h-125 py-5 px-5 flex flex-col items-center gap-16">
@@ -54,7 +54,9 @@ export default function Home() {
       </div>
       {/* Category Section */}
       <div className="w-full h-130 py-10 flex flex-col gap-11.5">
-        <h1 className="text-center text-5xl solid-font">Check main things for your future setup</h1>
+        <h1 className="text-center text-5xl solid-font">
+          Check main things for your future setup
+        </h1>
         <div className="w-full flex justify-evenly">
           <CategoryItem
             img="/icons/controller-icon.png"
@@ -79,13 +81,27 @@ export default function Home() {
         </div>
       </div>
       {/* Client Setup */}
-      <div className="w-full h-220 flex">
+      <div className="w-full h-220 flex mt-10">
         <div className="w-[50vw] flex justify-center items-center">
-          <div className="w-140 h-155 border">
-            <div className="space-y-5">
+          <div className="w-140 h-155 flex flex-col items-center gap-32 bg-[#800080c9]">
+            <div className="space-y-5 flex flex-col items-center mt-5">
               <h1 className="secondary-font text-[21px]">Our client's setup</h1>
 
-            <h1 className="text-5xl">We Always Help.</h1>
+              <h1 className="text-5xl text-center w-100">
+                We Always Here For Help.
+              </h1>
+            </div>
+
+            <div className="w-100 h-50 flex flex-col items-center gap-6">
+              <p className="text-[22px] text-center">
+                Share your homegrown crops, and an expert chef will craft a
+                seasonal brunch. Celebrate fresh flavors, community, and
+                farm-to-table dining—straight from your hands to the plate!
+              </p>
+
+              <button className="text-white w-50 bg-linear-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-linear-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 font-medium rounded-base text-sm px-6 py-2.5 text-center leading-5 rounded-md cursor-pointer">
+                Watch
+              </button>
             </div>
           </div>
         </div>
