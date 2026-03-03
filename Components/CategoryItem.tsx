@@ -9,13 +9,13 @@ type CategoryProps = {
 
 export default function CategoryItem({ img, title, desc }: CategoryProps) {
   return (
-    <div className="w-70 h-92 px-5 py-3.5 space-y-6 bg-[#18181B] rounded-md">
+    <div className="w-70 h-92 px-5 py-3.5 space-y-6 bg-[#18181B] rounded-md hover:mt-1">
       <div className="w-full h-42 relative bg-linear-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-linear-to-br focus:ring-4 rounded-md">
         <Image src={img} fill alt={title} />
       </div>
 
       <div className="w-full space-y-4">
-        <h1 className="text-2xl font-bold text-white text-center">
+        <h1 className="text-2xl text-white text-center">
           {title}
         </h1>
 

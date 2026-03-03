@@ -83,7 +83,7 @@ export default function Home() {
       {/* Client Setup */}
       <div className="w-full h-220 flex mt-10">
         <div className="w-[50vw] flex justify-center items-center">
-          <div className="w-140 h-155 flex flex-col items-center gap-32 bg-[#800080c9]">
+          <div className="w-140 h-155 flex flex-col items-center gap-32 py-5 bg-[#800080c9] rounded-md">
             <div className="space-y-5 flex flex-col items-center mt-5">
               <h1 className="secondary-font text-[21px]">Our client's setup</h1>
 
@@ -108,6 +108,17 @@ export default function Home() {
         <div className="w-[50vw] relative">
           <Image src={"/assets/client-setup.jpg"} fill alt="setup" />
         </div>
+      </div>
+
+      {/* Map Section */}
+      <div className="w-full flex flex-col items-center gap-8 py-30">
+        <h1 className="text-5xl font-semibold">Find our shop</h1>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2106.648322188154!2d44.78120570141073!3d41.69352492261199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440cc00a79a799%3A0x8accaace2cb10853!2sMtatsminda%20Park!5e0!3m2!1sen!2sge!4v1772552290968!5m2!1sen!2sge"
+          width="1200"
+          height="500"
+          loading="lazy"
+        ></iframe>
       </div>
     </main>
   );
