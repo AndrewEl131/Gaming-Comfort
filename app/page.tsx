@@ -1,4 +1,6 @@
 import CategoryItem from "@/Components/CategoryItem";
+import Client from "@/Components/Client";
+import { ClientTicker } from "@/Components/ClientTicker";
 import Image from "next/image";
 
 export default function Home() {
@@ -122,8 +124,8 @@ export default function Home() {
       </div>
 
       {/* Clients Section */}
-      <div>
-        
+      <div className="w-full">
+        <ClientTicker />
       </div>
     </main>
   );

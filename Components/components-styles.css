@@ -11,3 +11,13 @@
         bottom: -92vh;
     }
 }
+
+/* Add this to your CSS or Tailwind config */
+.animate-infinite-scroll {
+  animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
