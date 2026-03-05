@@ -120,6 +120,11 @@ export default function Home() {
           loading="lazy"
         ></iframe>
       </div>
+
+      {/* Clients Section */}
+      <div>
+        
+      </div>
     </main>
   );
 }
