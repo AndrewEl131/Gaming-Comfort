@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Anton, Radio_Canada_Big, Playfair_Display, Cascadia_Mono } from "next/font/google";
 import Navigation from "@/Components/Navigation";
+import Footer from "@/Components/Footer";
 
 const anton = Anton({
   subsets: ["latin"],
@@ -39,6 +40,7 @@ export default function RootLayout({
       >
         <Navigation />
         {children}
+        <Footer />
       </body>
     </html>
   );

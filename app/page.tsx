@@ -124,7 +124,8 @@ export default function Home() {
       </div>
 
       {/* Clients Section */}
-      <div className="w-full">
+      <div className="w-full flex flex-col gap-15">
+        <h1 className="text-5xl primary-font text-center">Our clients and their recommendations</h1>
         <ClientTicker />
       </div>
     </main>

@@ -7,7 +7,7 @@ type ClientProps = {
 
 export default function Client({img}: ClientProps) {
   return (
-    <div className="w-60 h-85 pt-5 flex flex-col gap-15 rounded-md bg-[#b95cb952]">
+    <div className="w-55 h-80 pt-5 flex flex-col gap-15 rounded-md bg-[#b95cb952]">
       <div className="w-full flex justify-center">
         <div className="w-30 h-30 relative">
             <Image src={img} fill alt="client" className="rounded-full" />

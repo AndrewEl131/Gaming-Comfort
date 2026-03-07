@@ -5,7 +5,7 @@ export const ClientTicker = () => {
 
   return (
     <div className="flex overflow-hidden w-full">
-      <div className="flex gap-15 animate-infinite-scroll">
+      <div className="flex gap-20 animate-infinite-scroll">
         {/* Render the list twice to create the seamless loop */}
         {[...clients, ...clients].map((item, index) => (
           <div key={index} className="flex-shrink-0">
