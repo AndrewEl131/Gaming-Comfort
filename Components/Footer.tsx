@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="min-h-200">
+    <footer className="min-h-160">
       <div className="w-full h-100 border-b flex flex-col gap-20 justify-center items-center">
         <h1 className="text-7xl text-center">Find your comfort...</h1>
         <div className="w-100 h-10">
@@ -44,7 +44,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="w-full py-30 flex justify-evenly">
+      <div className="w-full  flex justify-evenly">
         <div className="w-50 py-5 text-center space-y-2">
             <h1 className="text-3xl">Navigation</h1>
             <hr />
@@ -55,33 +55,33 @@ export default function Footer() {
             </ul>
         </div>
 
-        <div className="w-50 py-5 text-center space-y-2">
-            <h1 className="text-3xl">Navigation</h1>
+        <div className="w-70 py-5 text-center space-y-2">
+            <h1 className="text-3xl">Contact</h1>
             <hr />
-            <ul className="flex flex-col gap-1 text-[22px] secondary-font">
-                <li>Home</li>
-                <li>Gallery</li>
-                <li>Categories</li>
+            <ul className="flex flex-col gap-1 text-[21px] secondary-font">
+                <li>Sarajishvili street av.1</li>
+                <li>gaming-comfort@email.com</li>
+                <li>+000 321 123</li>
             </ul>
         </div>
 
         <div className="w-50 py-5 text-center space-y-2">
-            <h1 className="text-3xl">Navigation</h1>
+            <h1 className="text-3xl">Our Team</h1>
             <hr />
             <ul className="flex flex-col gap-1 text-[22px] secondary-font">
-                <li>Home</li>
-                <li>Gallery</li>
-                <li>Categories</li>
+                <li>LinkedIn</li>
+                <li>Mail</li>
+                <li>Whatsapp</li>
             </ul>
         </div>
 
         <div className="w-50 py-5 text-center space-y-2">
-            <h1 className="text-3xl">Navigation</h1>
+            <h1 className="text-3xl">Social</h1>
             <hr />
             <ul className="flex flex-col gap-1 text-[22px] secondary-font">
-                <li>Home</li>
-                <li>Gallery</li>
-                <li>Categories</li>
+                <li>Instagram</li>
+                <li>Facebook</li>
+                <li>X</li>
             </ul>
         </div>
       </div>
