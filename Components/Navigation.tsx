@@ -11,7 +11,7 @@ export default function Navigation() {
   const [isCardShowing, setIsCardShow] = useState(false);
 
   return (
-    <header className="w-full h-12.5 fixed top-0 bg-transparent flex items-center justify-between px-5 z-50">
+    <header className="w-full h-12.5 fixed top-3 bg-transparent flex items-center justify-between px-5 z-50">
       {/* Accordion Card */}
       {isCardShowing && <AccordionCard showFunc={() => setIsCardShow(false)} />}
 

@@ -52,10 +52,19 @@ export default function Home() {
               </button>
             </div>
           </div>
+
+          <div className="mt-3 border-b py-3">
+            <p className="text-mauve-200 w-120 text-justify">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam
+              veniam doloremque adipisci tempore aliquid, soluta voluptate
+              dignissimos, mollitia ullam eveniet possimus hic, esse non? Quam
+              excepturi tempore quas voluptatibus quia.
+            </p>
+          </div>
         </div>
       </div>
       {/* Category Section */}
-      <div className="w-full h-130 py-10 flex flex-col gap-11.5">
+      <div className="w-full h-150 py-20 flex flex-col gap-11.5">
         <h1 className="text-center text-5xl solid-font">
           Check main things for your future setup
         </h1>
@@ -125,7 +134,9 @@ export default function Home() {
 
       {/* Clients Section */}
       <div className="w-full flex flex-col gap-15">
-        <h1 className="text-5xl primary-font text-center">Our clients and their recommendations</h1>
+        <h1 className="text-5xl primary-font text-center">
+          Our clients and their recommendations
+        </h1>
         <ClientTicker />
       </div>
     </main>
